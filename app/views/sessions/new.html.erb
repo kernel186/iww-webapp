@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>IWW Responsive Bootstrap 4 Dashboard Template</title>
+
+
+  </head>
+  <body class="az-body">
+
+    <div class="az-signin-wrapper">
+      <div class="az-card-signin">
+        <h1 class="az-logo">az<span>i</span>a</h1>
+        <div class="az-signin-header">
+          <h2>Welcome back!</h2>
+          <h4>Please sign in to continue</h4>
+            <%= form_for(:session, url: login_path) do |f| %>
+          <form action="index.html">
+            <div class="form-group">
+
+              <label>Email</label>
+              <%= f.email_field :email, class: 'form-control', placeholder:'Email' %>
+
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Password</label>
+              <%= f.password_field :password, class: 'form-control', placeholder:'Password' %>
+            </div><!-- form-group -->
+            <%= f.submit "Log in", class:'btn btn-az-primary btn-block'%>
+            <% end %>
+          </form>
+
+        </div><!-- az-signin-header -->
+        <div class="az-signin-footer">
+          <p><a href="">Forgot password?</a></p>
+          <p>Don't have an account? <a href="page-signup.html">Create an Account</a></p>
+        </div><!-- az-signin-footer -->
+      </div><!-- az-card-signin -->
+    </div><!-- az-signin-wrapper -->
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/ionicons/ionicons.js"></script>
+
+    <script src="../js/IWW.js"></script>
+    <script>
+      $(function(){
+        'use strict'
+
+      });
+    </script>
+  </body>
+</html>

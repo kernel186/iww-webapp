@@ -1,0 +1,56 @@
+.fa, .fas {
+    font-weight: 900;
+    margin-left: 100px;
+}
+.main-title {
+    margin: 30px 0 40px;
+        margin-left: 0px;
+    padding: 0 20px;
+    font-size: 1.16em;
+    border-bottom: 1px solid #d3d3d3;
+    width: 100%;
+    font-family: "Lobster", cursive;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+
+    margin-top: 5em;
+}
+hi{
+  font-family: "Lobster", cursive;
+font-size: 16px;
+text-align: center;
+}
+
+.abc{
+  margin-right: 1250px;
+}
+
+.carousel {
+    position: relative;
+    margin-top: -1em;
+}
+
+.gravatar {
+float: left;
+margin-right: 10px;
+}
+.gravatar_edit {
+margin-top: 15px;
+}
+
+#error_explanation {
+color: red;
+ul {
+color: red;
+margin: 0 0 30px 0;
+}
+}
+.field_with_errors {
+@extend .has-error;
+.form-control {
+color: red;
+}
+}

@@ -1,0 +1,42 @@
+<%=render 'shared/hsf'%>
+
+<div id="toggleSidebar" onclick="openSidebar()"><button type="button" class="btn btn-primary px-3"><i class="fab fa-google-wallet" aria-hidden="true"></i></button>
+</div>
+<div id="mySidebar" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times; test</a>
+  <div class="sidebarLinks">
+    <br>
+      <%=render 'shared/accordiono'%>
+
+  </div>
+</div>
+<div id="main">
+  <h1><center>Every great purchase starts here!</center></h1>
+
+
+  <!-- Search form -->
+  <!-- Search form -->
+  <form class="form-inline active-purple-3 active-purple-4">
+    <i class="fas fa-search" aria-hidden="true"></i>
+    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+  </form>
+  <%=render 'shared/grid'%>
+</div>
+
+<script type="text/javascript">
+  function $(id) {
+  return document.getElementById(id);
+}
+function openSidebar() {
+  $("mySidebar").style.transition = "all 2s";
+  $("main").style.transition = "all 2s";
+  $("mySidebar").style.width = "250px";
+  $("main").style.marginLeft = "300px";
+}
+function closeSidebar() {
+  $("mySidebar").style.transition = "all 2s";
+  $("main").style.transition = "all 2s";
+  $("mySidebar").style.width = "0";
+  $("main").style.marginLeft = "100px";
+}
+</script>

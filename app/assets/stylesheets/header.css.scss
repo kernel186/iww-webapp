@@ -1,0 +1,85 @@
+*{
+  font-family:arial;
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin:0;
+}
+/*Mobile*/
+
+nav {
+  color: #ecba00;
+  width:100%;
+  margin:auto;
+}
+.navigation {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.weathersummary ul {
+  color: white;
+  font-size: 2em;
+
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: white;
+  background-color: #212121;
+  text-decoration: none;
+}
+.navigation a:hover:not(.active) {
+  background-color: #ecba00;
+  color: #000;
+}
+.navigation li a.active {
+  background-color: #545454;
+  color: #fff;
+}
+
+.responsive li {
+  display: block;
+}
+
+
+.responsive li {
+  display: block;
+}
+
+/*Large*/
+@media (min-width: 680px) {
+
+  nav {
+   background-color: #212121;
+   width: 100%;
+
+  }
+  .navigation {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .navigation li {
+    line-height: 15px;
+    display: block;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  nav ul li a {
+    font-size: 100%;
+    padding: 0em;
+  }
+
+}

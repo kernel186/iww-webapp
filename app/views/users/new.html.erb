@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <body class="az-body">
+
+    <div class="az-signup-wrapper">
+      <div class="az-column-signup-left">
+        <div>
+
+          <h1 class="az-logo">I<span1>W</span1>W</h1>
+          <h5>Responsive Modern Dashboard &amp; Admin Template</h5>
+          <p>We are excited to launch our new company and product IWW. After being featured in too many magazines to mention and having created an online stir, we know that ThemePixels is going to be big. We also hope to win Startup Fictional Business of the Year this year.</p>
+          <p>Browse our site and see for yourself why you need IWW.</p>
+          <a href="index.html" class="btn btn-outline-indigo">Learn More</a>
+        </div>
+      </div><!-- az-column-signup-left -->
+      <div class="az-column-signup">
+        <h1 class="az-logo">I<span1>W</span1>W</h1>
+        <div class="az-signup-header">
+          <h2>Get Started</h2>
+          <h4>It's free to signup and only takes a minute.</h4>
+          <%= form_for(@user, url: signup_path) do |f| %>
+          <%= render 'shared/error_messages' %>
+          <form action="page-profile.html">
+            <div class="form-group">
+              <label>Firstname &amp; Lastname</label>
+              <%= f.text_field :name, class:'form-control', placeholder:'Enter your name' %>
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Email</label>
+              <%= f.email_field :email, class:'form-control', placeholder:'Enter your email' %>
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Password</label>
+              <%= f.password_field :password, class:'form-control', placeholder:'Enter password' %>
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Password Confirmation</label>
+              <%= f.password_field :password_confirmation, class:'form-control', placeholder:'Password Confirmation' %>
+            </div><!-- form-group -->
+            <%= f.submit "Create my account", class: 'btn btn-az-indigo btn-sm btn-block' %>
+              <% end %>
+            <div class="row row-xs">
+              <div class="col-sm-6"><button class="btn btn-indigo btn-sm"><i class="fab fa-facebook-f"></i> Signup</button></div>
+              <div class="col-sm-6 mg-t-10 mg-sm-t-0"><button class="btn btn-indigo btn-sm"><i class="fab fa-twitter"></i> Signup</button></div>
+            </div><!-- row -->
+          </form>
+
+        </div><!-- az-signup-header -->
+        <div class="az-signup-footer">
+          <p>Already have an account? <a href="page-signin.html">Sign In</a></p>
+        </div><!-- az-signin-footer -->
+      </div><!-- az-column-signup -->
+    </div><!-- az-signup-wrapper -->
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/ionicons/ionicons.js"></script>
+
+    <script src="../js/IWW.js"></script>
+    <script>
+      $(function(){
+        'use strict'
+
+      });
+    </script>
+  </body>
+</html>
